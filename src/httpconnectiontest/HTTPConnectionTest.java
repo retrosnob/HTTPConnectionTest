@@ -31,6 +31,7 @@ public class HTTPConnectionTest {
         httpURLConnection.setDoInput(true);
         InputStream inputStream = httpURLConnection.getInputStream();
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+        System.out.println(bufferedReader.readLine());
         }
         catch (Exception e) {
             e.printStackTrace();
